@@ -497,7 +497,7 @@ async function datos(criterio) {
     }
 }
 
-datos("René Perea Morales").catch((error) => console.error(error));
+datos("Perea Morales, René").catch((error) => console.error(error));
 
 document.querySelectorAll("select")[0].addEventListener("change", (event) => {
     tabla.innerHTML = " ";
