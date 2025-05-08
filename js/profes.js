@@ -308,13 +308,13 @@ async function datos(criterio) {
     var profeSeleccion = [];
     var notas = [];
     var notasPrevias = [];
-    const consulta = await fetch("https://raw.githubusercontent.com/profesorfaco/troncal/refs/heads/main/clase-09/titulades.json");
+    const consulta = await fetch("https://api.myjson.online/v1/records/c661096b-009f-4811-9bd2-018ea19a7cee");
     const data = await consulta.json();
     console.log("Lo que sigue son todos los datos:");
     console.log(data);
 
     //Creo una selección, basándome en el selector
-    data.forEach((d) => {
+    data.data.forEach((d) => {
         if (d.profe_guia == criterio) {
             seleccion.push(d);
         }
